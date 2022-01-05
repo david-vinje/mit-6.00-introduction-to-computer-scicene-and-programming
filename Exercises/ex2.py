@@ -50,6 +50,10 @@ while (nuggets(n) != 0):
 print("Largest number of McNuggets that cannot be bought in exact quantity:", n)
 
 # Problem 4
+# Assume that the variable packages is bound to a tuple of length 3,
+# the values of which specify the sizes of the packages, ordered from smallest to largest.
+# Write a program that uses exhaustive search to find the largest number (less than 200)
+# of McNuggets that cannot be bought in exact quantity
 def packages(x, y, z):
     n = 199
     while (nuggets(n, x, y, z) != 0):
@@ -63,5 +67,4 @@ for i in range(1, 10):
     b = random.randrange(a+1, a+10)
     c = random.randrange(b+1, b+10)
     packages(a, b, c)
-
 packages(6, 9, 20)        
